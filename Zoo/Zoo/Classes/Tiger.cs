@@ -6,7 +6,7 @@ namespace Zoo.Classes
 {
     class Tiger: Mammal
     {
-
+        public override int Legs => 4;
         public override string Eat()
         {
             return "I eat my meat rare";

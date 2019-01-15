@@ -6,6 +6,7 @@ namespace Zoo.Classes
 {
     class Owl : Mammal
     {
+        public override int Legs => 2;
         public override string Eat()
         {
             return "Mice on the menu?";
