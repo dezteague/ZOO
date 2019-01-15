@@ -16,11 +16,27 @@ namespace ZooTest
         }
 
         [Fact]
+        public void TigerEats()
+        {
+            Tiger tiger = new Tiger();
+            string meat = tiger.Eat();
+            Assert.Equal("I eat my meat rare", meat);
+        }
+
+        [Fact]
         public void BearMakesSound()
         {
             Bear bear = new Bear();
             string growl = bear.Sound();
             Assert.Equal("Growl!", growl);
+        }
+
+        [Fact]
+        public void BearEats()
+        {
+            Bear bear = new Bear();
+            string honey = bear.Eat();
+            Assert.Equal("Honey comb please!", honey);
         }
 
         [Fact]
@@ -32,6 +48,14 @@ namespace ZooTest
         }
 
         [Fact]
+        public void OrangutanEats()
+        {
+            Orangutan orangutan = new Orangutan();
+            string banana = orangutan.Eat();
+            Assert.Equal("Bananas please!", banana);
+        }
+
+        [Fact]
         public void OwlMakesSound()
         {
             Owl owl = new Owl();
@@ -40,11 +64,27 @@ namespace ZooTest
         }
 
         [Fact]
+        public void OwlEats()
+        {
+            Owl owl = new Owl();
+            string mice = owl.Eat();
+            Assert.Equal("Mice on the menu?", mice);
+        }
+
+        [Fact]
         public void GoldfishMakesSound()
         {
             GoldFish goldFish = new GoldFish();
             string bloop = goldFish.Sound();
             Assert.Equal("Bloop, bloop", bloop);
+        }
+
+        [Fact]
+        public void GoldfishEats()
+        {
+            GoldFish goldFish = new GoldFish();
+            string pellets = goldFish.Eat();
+            Assert.Equal("Feed me pellets!", pellets);
         }
     }
 }
