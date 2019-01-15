@@ -4,7 +4,16 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class WarmBlooded
+    abstract class WarmBlooded: Animal
     {
+        public override bool Isliving { get; set; } = true;
+        public override bool IsBreathing { get; set; } = true;
+        public virtual bool HasWarmBlood { get; } = true;
+        public abstract int Legs { get; }
+
+        public virtual bool DoesntChangeBodyTemp()
+        {
+            return true;
+        }
     }
 }

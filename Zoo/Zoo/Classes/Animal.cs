@@ -9,8 +9,9 @@ namespace Zoo.Classes
         public abstract bool Isliving { get; set; }
         public abstract bool IsBreathing { get; set; }
 
-        public abstract void Eat();
+        public abstract string Eat();
         public abstract void Sleep();
         public abstract void Reproduce();
+        public abstract string Sound();
     }
 }
