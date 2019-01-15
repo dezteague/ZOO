@@ -5,11 +5,16 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    public class GoldFish : Fish, ILive
+    public class GoldFish : Fish, ILive, IHaveEggs
     {
         public string Live()
         {
             return "I live in my fish bowl :(";
+        }
+
+        public string Eggs()
+        {
+            return "I lay soft eggs";
         }
 
         public override bool HasFins { get; set; }

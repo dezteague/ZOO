@@ -5,11 +5,16 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    public class Tiger: Mammal, ILive
+    public class Tiger: Mammal, ILive, IHaveCubs
     {
         public string Live()
         {
             return "I live in warm climates";
+        }
+
+        public string Cubs()
+        {
+            return "My cubs are the cutest";
         }
 
         public override int Legs => 4;

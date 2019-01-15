@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    public class Owl : Mammal, IFly, ILive
+    public class Owl : Mammal, IFly, ILive, IHaveEggs
     {
         public string Fly()
         {
@@ -15,6 +15,11 @@ namespace Zoo.Classes
         public string Live()
         {
             return "I live in a nest";
+        }
+
+        public string Eggs()
+        {
+            return "My babies hatch from eggs";
         }
 
         public override int Legs => 2;
