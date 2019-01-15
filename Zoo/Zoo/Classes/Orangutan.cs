@@ -9,7 +9,7 @@ namespace Zoo.Classes
     {
         public string Live()
         {
-            return "I live in the Southeastern islands of Borneo and Sumatra";
+            return "I live in Borneo and Sumatra";
         }
 
         public override string Eat()

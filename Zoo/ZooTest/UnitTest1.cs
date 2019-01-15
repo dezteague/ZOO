@@ -24,6 +24,14 @@ namespace ZooTest
         }
 
         [Fact]
+        public void TigerLives()
+        {
+            Tiger tiger = new Tiger();
+            string warm = tiger.Live();
+            Assert.Equal("I live in warm climates", warm);
+        }
+
+        [Fact]
         public void BearMakesSound()
         {
             Bear bear = new Bear();
@@ -37,6 +45,14 @@ namespace ZooTest
             Bear bear = new Bear();
             string honey = bear.Eat();
             Assert.Equal("Honey comb please!", honey);
+        }
+
+        [Fact]
+        public void BearLives()
+        {
+            Bear bear = new Bear();
+            string forest = bear.Live();
+            Assert.Equal("I live in dense forest", forest);
         }
 
         [Fact]
@@ -56,6 +72,14 @@ namespace ZooTest
         }
 
         [Fact]
+        public void OrangutanLives()
+        {
+            Orangutan orangutan = new Orangutan();
+            string islands = orangutan.Live();
+            Assert.Equal("I live in Borneo and Sumatra", islands);
+        }
+
+        [Fact]
         public void OwlMakesSound()
         {
             Owl owl = new Owl();
@@ -72,6 +96,14 @@ namespace ZooTest
         }
 
         [Fact]
+        public void OwlLives()
+        {
+            Owl owl = new Owl();
+            string nest = owl.Live();
+            Assert.Equal("I live in a nest", nest);
+        }
+
+        [Fact]
         public void GoldfishMakesSound()
         {
             GoldFish goldFish = new GoldFish();
@@ -85,6 +117,14 @@ namespace ZooTest
             GoldFish goldFish = new GoldFish();
             string pellets = goldFish.Eat();
             Assert.Equal("Feed me pellets!", pellets);
+        }
+
+        [Fact]
+        public void GoldfishLives()
+        {
+            GoldFish goldFish = new GoldFish();
+            string bowl = goldFish.Live();
+            Assert.Equal("I live in my fish bowl :(", bowl);
         }
     }
 }
