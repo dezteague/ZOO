@@ -13,6 +13,11 @@ namespace Zoo.Classes
         {
         return true;
         }
+
+        public override bool DoesntChangeBodyTemp()
+        {
+            return base.DoesntChangeBodyTemp();
+        }
     }
 
     
