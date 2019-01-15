@@ -24,7 +24,7 @@ namespace Zoo.Classes
 
         public override string Sound()
         {
-            Console.WriteLine("Hear me Roar!");
+            throw new NotImplementedException();
         }
 
 
