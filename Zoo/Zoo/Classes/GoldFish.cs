@@ -1,11 +1,17 @@
-﻿using System;
+﻿using Zoo.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Zoo.Classes
 {
-    public class GoldFish : Fish
+    public class GoldFish : Fish, ILive
     {
+        public string Live()
+        {
+            return "I live in my fish bowl :(";
+        }
+
         public override bool HasFins { get; set; }
         public override bool HasGills { get; set; }
 

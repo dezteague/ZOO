@@ -1,11 +1,17 @@
-﻿using System;
+﻿using Zoo.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Zoo.Classes
 {
-    public class Orangutan : Mammal
+    public class Orangutan : Mammal, ILive
     {
+        public string Live()
+        {
+            return "I live in the Southeastern islands of Borneo and Sumatra";
+        }
+
         public override string Eat()
         {
             return "Bananas please!";

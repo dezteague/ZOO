@@ -1,11 +1,17 @@
-﻿using System;
+﻿using Zoo.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Zoo.Classes
 {
-    public class Bear : Mammal
+    public class Bear : Mammal, ILive
     {
+        public string Live()
+        {
+            return "I live in dense forest";
+        }
+
         public override int Legs => 2;
         public override string Eat()
         {

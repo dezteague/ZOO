@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Zoo.Interfaces
 {
-    public interface ISwim
+    public interface ILive
     {
-        string Swim();
+        string Live();
     }
 }
