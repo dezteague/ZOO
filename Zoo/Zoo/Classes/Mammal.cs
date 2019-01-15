@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    abstract class Mammal: WarmBlooded
+    public abstract class Mammal: WarmBlooded
     {
         public override bool HasWarmBlood { get; }
         public override int Legs { get; }
