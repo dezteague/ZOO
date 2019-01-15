@@ -8,22 +8,22 @@ namespace Zoo.Classes
     {
         public override string Eat()
         {
-            throw new NotImplementedException();
+            return "Bananas please!";
         }
 
         public override void Reproduce()
         {
-            throw new NotImplementedException();
+            //Baby orangutans
         }
 
         public override void Sleep()
         {
-            throw new NotImplementedException();
+            //sleeps in trees
         }
 
         public override string Sound()
         {
-            throw new NotImplementedException();
+            return "Ooh Oh Ah Aah";
         }
     }
 }
