@@ -4,7 +4,26 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class Orangutan
+    class Orangutan : Mammal
     {
+        public override string Eat()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Reproduce()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Sleep()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string Sound()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
