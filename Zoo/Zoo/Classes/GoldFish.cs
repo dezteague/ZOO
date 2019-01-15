@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class GoldFish : Fish
+    public class GoldFish : Fish
     {
         public override bool HasFins { get; set; }
         public override bool HasGills { get; set; }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    abstract class Fish: ColdBlooded
+    public abstract class Fish: ColdBlooded
     {
         public abstract bool HasFins { get; set; }
         public abstract bool HasGills { get; set; }
