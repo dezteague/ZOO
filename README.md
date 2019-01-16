@@ -40,4 +40,4 @@ An interface describes what actions a class can do; whereas, inheritance is abou
 
 Examples: My interfaces are IFly, IProduceCubs, IProduceEggs and ISurvive.  IFly is implemented in the Owl class because it is inherently a bird and has a wing property. Bear and Tiger have the IProduceCubs interface because they are inherit the warm blooded property of mammals.  
 
-Collaborators: Ryna Truong and Xia Liu
+Collaborators: Ryna Truong, Xia Liu, and Jason Few
