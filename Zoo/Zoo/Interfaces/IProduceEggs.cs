@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Interfaces
 {
-    interface IHaveEggs
+    interface IProduceEggs
     {
         string Eggs();
     }

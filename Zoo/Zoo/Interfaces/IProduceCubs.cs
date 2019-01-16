@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Zoo.Interfaces
 {
-    public interface ILive
+    public interface IProduceCubs
     {
-        string Live();
+        string Cubs();
     }
 }

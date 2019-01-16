@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    public class Tiger: Mammal, ILive, IHaveCubs
+    public class Tiger: Mammal, ISurvive, IProduceCubs
     {
         public string Live()
         {
