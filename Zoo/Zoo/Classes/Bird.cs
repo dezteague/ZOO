@@ -7,6 +7,7 @@ namespace Zoo.Classes
     public abstract class Bird: WarmBlooded
     {
         public abstract bool HasBeak { get; set; }
+        public abstract bool HasWings { get; set; }
 
         public bool Fly()
         {
