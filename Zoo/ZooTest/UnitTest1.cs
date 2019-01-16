@@ -126,5 +126,26 @@ namespace ZooTest
             string bowl = goldFish.Live();
             Assert.Equal("I live in my fish bowl :(", bowl);
         }
+
+        [Fact]
+        public void TigerIsAnimal()
+        {
+            Tiger tiger = new Tiger();
+            Assert.True(tiger is Animal);
+        }
+
+        [Fact]
+        public void BearIsAnimal()
+        {
+            Bear bear = new Bear();
+            Assert.True(bear is Animal);
+        }
+
+        [Fact]
+        public void BearIsMammal()
+        {
+            Bear bear = new Bear();
+            Assert.True(bear is Mammal);
+        }
     }
 }
