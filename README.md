@@ -6,7 +6,7 @@ A hierarchical class structure of a zoo that contains 3 layers of inheritance wi
 
 ## Zoo Diagram
 
-![diagram](https://github.com/dezteague/ZOO/blob/master/ZooDiagram.png)
+![diagram](https://github.com/dezteague/ZOO/blob/master/Zoo/updatedzoodiagram.jpg)
 
 ## Object-Oriented Programming Principles
 
