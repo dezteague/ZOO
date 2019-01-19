@@ -129,6 +129,14 @@ namespace ZooTest
         }
 
         [Fact]
+        public void OwlProducesEggs()
+        {
+            Owl owl = new Owl();
+            string eggs = owl.Eggs();
+            Assert.Equal("My babies hatch from eggs", eggs);
+        }
+
+        [Fact]
         public void GoldfishMakesSound()
         {
             GoldFish goldFish = new GoldFish();
@@ -150,6 +158,14 @@ namespace ZooTest
             GoldFish goldFish = new GoldFish();
             string bowl = goldFish.Live();
             Assert.Equal("I live in my fish bowl :(", bowl);
+        }
+
+        [Fact]
+        public void GoldfishProducesEggs()
+        {
+            GoldFish goldFish = new GoldFish();
+            string eggs = goldFish.Eggs();
+            Assert.Equal("I lay soft eggs", eggs);
         }
 
         [Fact]
