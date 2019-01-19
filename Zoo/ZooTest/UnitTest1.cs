@@ -2,6 +2,7 @@ using System;
 using Xunit;
 using Zoo;
 using Zoo.Classes;
+using Zoo.Interfaces;
 
 namespace ZooTest
 {
@@ -32,6 +33,14 @@ namespace ZooTest
         }
 
         [Fact]
+        public void TigerProducesCubs()
+        {
+            Tiger tiger = new Tiger();
+            string cubs = tiger.Cubs();
+            Assert.Equal("My cubs are the cutest", cubs);
+        }
+
+        [Fact]
         public void BearMakesSound()
         {
             Bear bear = new Bear();
@@ -56,6 +65,14 @@ namespace ZooTest
         }
 
         [Fact]
+        public void BearProducesCubs()
+        {
+            Bear bear = new Bear();
+            string cubs = bear.Cubs();
+            Assert.Equal("My babies are called cubs!", cubs);
+        }
+
+        [Fact]
         public void OrangutanMakesSound()
         {
             Orangutan orangutan = new Orangutan();
@@ -70,7 +87,7 @@ namespace ZooTest
             string banana = orangutan.Eat();
             Assert.Equal("Bananas please!", banana);
         }
-
+        
         [Fact]
         public void OrangutanLives()
         {
@@ -101,6 +118,14 @@ namespace ZooTest
             Owl owl = new Owl();
             string nest = owl.Live();
             Assert.Equal("I live in a nest", nest);
+        }
+
+        [Fact]
+        public void OwlCanFly()
+        {
+            Owl owl = new Owl();
+            string flies = owl.Fly();
+            Assert.Equal("I'm notcturnal, I fly through the night!", flies);
         }
 
         [Fact]
@@ -147,5 +172,7 @@ namespace ZooTest
             Bear bear = new Bear();
             Assert.True(bear is Mammal);
         }
+
+
     }
 }
